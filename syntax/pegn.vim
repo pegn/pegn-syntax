@@ -36,11 +36,11 @@ syn match pegnNode /\(\u\l\+\)\+/
 hi def link pegnNode Define
 
 " Tokens
-syn match pegnToken /\u\u\+/
+syn match pegnToken /\u\(_\=\u\)\+/
 hi def link pegnToken Keyword
 
 " Classes
-syn match pegnClass /\l\l\+/
+syn match pegnClass /\l\(_\=\l\)\+/
 hi def link pegnClass Identifier
 
 let b:current_syntax = 'pegn'
